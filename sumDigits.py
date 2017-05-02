@@ -1,8 +1,8 @@
 def sumDigits(number):
 	""" Returns the sum of each digit in number """
-	if number == 0: # Base case
+	
+	if number == 0: # Terminating case
 		return 0
-	else:
-		return (number % 10) + sumDigits(number // 10)
 
-print(sumDigits(999))
+	return (number % 10) + sumDigits(number // 10) # Recursive call
+
